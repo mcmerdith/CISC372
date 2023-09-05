@@ -40,8 +40,6 @@ void matrixArrayOfArrays(int n, int m)
         printf("\n");
     }
 
-    printf("\n");
-
     // iterate matrix col-major
     for (j = 0; j < m; ++j)
     {
@@ -97,8 +95,6 @@ void matrixOneBigArray(int n, int m)
         printf("\n");
     }
 
-    printf("\n");
-
     // iterate matrix col-major
     for (j = 0; j < m; ++j)
     {
@@ -115,4 +111,10 @@ void matrixOneBigArray(int n, int m)
     }
 
     free(matrix);
+}
+
+int main()
+{
+    matrixArrayOfArrays(6, 5);
+    matrixOneBigArray(6, 5);
 }
