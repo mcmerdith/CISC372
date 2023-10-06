@@ -1,311 +1,280 @@
-Script started on 2023-10-05 20:12:53-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="126" LINES="23"]
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004hscript output.txt[17Dnvim sh.c        [8D[9Dls       cd proj3[8Dls      rm -r proj4[8Dproj4   [8Dls      git checkout PA3_SimpleShell[28Dcd ..                       [23Dls   cd outls    git checkout 5d8ab21666b5b461dfc6db84d52135e4dfc88f18[53Dls                                                   [51Dcd outls    cd ..git checkout PA3_SimpleShell[28Dls                          [26Drm proj4-r proj4[11Dls         [9Dcd proj3[8Dls      nvim sh.c[9Dscript output.txt[17D                 [17D../mysh    myshrunner.sh "make MPI=true THREAD_COUNT=1 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=1 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-output.txt
-hw/2/
+Script started on 2023-10-06 15:59:31-04:00 [TERM="xterm-256color" TTY="/dev/pts/139" COLUMNS="126" LINES="23"]
+merematt@cisc372:~/CISC372$ ./test.sh
+Running 1000 tests with 1 threads
 
-sent 316 bytes  received 45 bytes  144.40 bytes/sec
-total size is 172.63K  speedup is 478.20
-Executing remote command 'make MPI=true THREAD_COUNT=1 run'
+Compiling and linking hw/2/hw2.c => hw/2/hw2.out
 Running hw2.out
 Enter the number of trials:
-1000
 We found 0 straight flushes out of 1000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=1 run" run" 1 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=1 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+Time elapsed: 0.000300 seconds
 
-sent 269 bytes  received 15 bytes  189.33 bytes/sec
-total size is 172.63K  speedup is 607.86
-Executing remote command 'make MPI=true THREAD_COUNT=1 run'
-Running hw2.out
-Enter the number of trials:
-10000
-We found 1 straight flushes out of 10000 hands or 0.010000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=1 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=1 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+========== COMPLETE ==========
 
-sent 269 bytes  received 15 bytes  113.60 bytes/sec
-total size is 172.63K  speedup is 607.86
-Executing remote command 'make MPI=true THREAD_COUNT=1 run'
+Running 1000 tests with 2 threads
+
 Running hw2.out
+srun: job 294087 queued and waiting for resources
+srun: job 294087 has been allocated resources
 Enter the number of trials:
-100000
+We found 0 straight flushes out of 1000 hands or 0.000000 percent.
+Time elapsed: 0.000223 seconds
+
+========== COMPLETE ==========
+
+Running 1000 tests with 4 threads
+
+Running hw2.out
+srun: job 294088 queued and waiting for resources
+srun: job 294088 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 1000 hands or 0.000000 percent.
+Time elapsed: 0.000660 seconds
+
+========== COMPLETE ==========
+
+Running 1000 tests with 8 threads
+
+Running hw2.out
+srun: job 294089 queued and waiting for resources
+srun: job 294089 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 1000 hands or 0.000000 percent.
+Time elapsed: 0.000820 seconds
+
+========== COMPLETE ==========
+
+Running 1000 tests with 16 threads
+
+Running hw2.out
+srun: job 294090 queued and waiting for resources
+srun: job 294090 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 1000 hands or 0.000000 percent.
+Time elapsed: 0.000998 seconds
+
+========== COMPLETE ==========
+
+Running 10000 tests with 1 threads
+
+Running hw2.out
+srun: job 294091 queued and waiting for resources
+srun: job 294091 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 10000 hands or 0.000000 percent.
+Time elapsed: 0.003097 seconds
+
+========== COMPLETE ==========
+
+Running 10000 tests with 2 threads
+
+Running hw2.out
+srun: job 294092 queued and waiting for resources
+srun: job 294092 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 10000 hands or 0.000000 percent.
+Time elapsed: 0.001924 seconds
+
+========== COMPLETE ==========
+
+Running 10000 tests with 4 threads
+
+Running hw2.out
+srun: job 294093 queued and waiting for resources
+srun: job 294093 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 10000 hands or 0.000000 percent.
+Time elapsed: 0.002313 seconds
+
+========== COMPLETE ==========
+
+Running 10000 tests with 8 threads
+
+Running hw2.out
+srun: job 294094 queued and waiting for resources
+srun: job 294094 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 10000 hands or 0.000000 percent.
+Time elapsed: 0.001317 seconds
+
+========== COMPLETE ==========
+
+Running 10000 tests with 16 threads
+
+Running hw2.out
+srun: job 294095 queued and waiting for resources
+srun: job 294095 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 10000 hands or 0.000000 percent.
+Time elapsed: 0.000518 seconds
+
+========== COMPLETE ==========
+
+Running 100000 tests with 1 threads
+
+Running hw2.out
+srun: job 294096 queued and waiting for resources
+srun: job 294096 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 100000 hands or 0.000000 percent.
+Time elapsed: 0.022524 seconds
+
+========== COMPLETE ==========
+
+Running 100000 tests with 2 threads
+
+Running hw2.out
+srun: job 294097 queued and waiting for resources
+srun: job 294097 has been allocated resources
+Enter the number of trials:
+We found 0 straight flushes out of 100000 hands or 0.000000 percent.
+Time elapsed: 0.019139 seconds
+
+========== COMPLETE ==========
+
+Running 100000 tests with 4 threads
+
+Running hw2.out
+srun: job 294098 queued and waiting for resources
+srun: job 294098 has been allocated resources
+Enter the number of trials:
 We found 2 straight flushes out of 100000 hands or 0.002000 percent.
-Time elapsed: 0.03 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=1 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=1 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-output.txt
+Time elapsed: 0.012394 seconds
 
-sent 1.19K bytes  received 38 bytes  491.60 bytes/sec
-total size is 176.73K  speedup is 143.80
-Executing remote command 'make MPI=true THREAD_COUNT=1 run'
-Running hw2.out
-Enter the number of trials:
-1000000
-We found 9 straight flushes out of 1000000 hands or 0.000900 percent.
-Time elapsed: 0.19 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=1 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=1 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+========== COMPLETE ==========
 
-sent 268 bytes  received 15 bytes  113.20 bytes/sec
-total size is 176.73K  speedup is 624.48
-Executing remote command 'make MPI=true THREAD_COUNT=1 run'
-Running hw2.out
-Enter the number of trials:
-10000000
-We found 161 straight flushes out of 10000000 hands or 0.001610 percent.
-Time elapsed: 1.52 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=1 run" run" 2 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=2 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+Running 100000 tests with 8 threads
 
-sent 268 bytes  received 15 bytes  188.67 bytes/sec
-total size is 176.73K  speedup is 624.48
-Executing remote command 'make MPI=true THREAD_COUNT=2 run'
 Running hw2.out
+srun: job 294099 queued and waiting for resources
+srun: job 294099 has been allocated resources
 Enter the number of trials:
-1000
-We found 0 straight flushes out of 1000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=2 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=2 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+We found 3 straight flushes out of 100000 hands or 0.003000 percent.
+Time elapsed: 0.006567 seconds
 
-sent 268 bytes  received 15 bytes  113.20 bytes/sec
-total size is 176.73K  speedup is 624.48
-Executing remote command 'make MPI=true THREAD_COUNT=2 run'
-Running hw2.out
-Enter the number of trials:
-10000
-We found 0 straight flushes out of 10000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=2 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=2 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+========== COMPLETE ==========
 
-sent 268 bytes  received 15 bytes  188.67 bytes/sec
-total size is 176.73K  speedup is 624.48
-Executing remote command 'make MPI=true THREAD_COUNT=2 run'
+Running 100000 tests with 16 threads
+
 Running hw2.out
+srun: job 294100 queued and waiting for resources
+srun: job 294100 has been allocated resources
 Enter the number of trials:
-100000
 We found 4 straight flushes out of 100000 hands or 0.004000 percent.
-Time elapsed: 0.01 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=2 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=2 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-output.txt
+Time elapsed: 0.004023 seconds
 
-sent 480 bytes  received 74 bytes  221.60 bytes/sec
-total size is 180.82K  speedup is 326.40
-Executing remote command 'make MPI=true THREAD_COUNT=2 run'
-Running hw2.out
-Enter the number of trials:
-1000000
-We found 14 straight flushes out of 1000000 hands or 0.001400 percent.
-Time elapsed: 0.13 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=2 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=2 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+========== COMPLETE ==========
 
-sent 269 bytes  received 15 bytes  113.60 bytes/sec
-total size is 180.82K  speedup is 636.70
-Executing remote command 'make MPI=true THREAD_COUNT=2 run'
-Running hw2.out
-Enter the number of trials:
-10000000
-We found 169 straight flushes out of 10000000 hands or 0.001690 percent.
-Time elapsed: 1.35 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=2 run" run" 4 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=4 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+Running 1000000 tests with 1 threads
 
-sent 269 bytes  received 15 bytes  189.33 bytes/sec
-total size is 180.82K  speedup is 636.70
-Executing remote command 'make MPI=true THREAD_COUNT=4 run'
 Running hw2.out
+srun: job 294101 queued and waiting for resources
+srun: job 294101 has been allocated resources
 Enter the number of trials:
-1000
-We found 0 straight flushes out of 1000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=4 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=4 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+We found 17 straight flushes out of 1000000 hands or 0.001700 percent.
+Time elapsed: 0.148955 seconds
 
-sent 269 bytes  received 15 bytes  113.60 bytes/sec
-total size is 180.82K  speedup is 636.70
-Executing remote command 'make MPI=true THREAD_COUNT=4 run'
-Running hw2.out
-Enter the number of trials:
-10000
-We found 0 straight flushes out of 10000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=4 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=4 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-output.txt
+========== COMPLETE ==========
 
-sent 462 bytes  received 110 bytes  381.33 bytes/sec
-total size is 184.92K  speedup is 323.29
-Executing remote command 'make MPI=true THREAD_COUNT=4 run'
-Running hw2.out
-Enter the number of trials:
-100000
-We found 0 straight flushes out of 100000 hands or 0.000000 percent.
-Time elapsed: 0.01 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=4 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=4 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+Running 1000000 tests with 2 threads
 
-sent 268 bytes  received 15 bytes  113.20 bytes/sec
-total size is 184.92K  speedup is 653.43
-Executing remote command 'make MPI=true THREAD_COUNT=4 run'
 Running hw2.out
+srun: job 294102 queued and waiting for resources
+srun: job 294102 has been allocated resources
 Enter the number of trials:
-1000000
+We found 11 straight flushes out of 1000000 hands or 0.001100 percent.
+Time elapsed: 0.135701 seconds
+
+========== COMPLETE ==========
+
+Running 1000000 tests with 4 threads
+
+Running hw2.out
+srun: job 294103 queued and waiting for resources
+srun: job 294103 has been allocated resources
+Enter the number of trials:
 We found 12 straight flushes out of 1000000 hands or 0.001200 percent.
-Time elapsed: 0.07 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=4 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=4 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+Time elapsed: 0.099241 seconds
 
-sent 268 bytes  received 15 bytes  188.67 bytes/sec
-total size is 184.92K  speedup is 653.43
-Executing remote command 'make MPI=true THREAD_COUNT=4 run'
+========== COMPLETE ==========
+
+Running 1000000 tests with 8 threads
+
 Running hw2.out
+srun: job 294104 queued and waiting for resources
+srun: job 294104 has been allocated resources
 Enter the number of trials:
-10000000
-We found 154 straight flushes out of 10000000 hands or 0.001540 percent.
-Time elapsed: 0.68 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=4 run" run" 8 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=8 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-
-sent 268 bytes  received 15 bytes  113.20 bytes/sec
-total size is 184.92K  speedup is 653.43
-Executing remote command 'make MPI=true THREAD_COUNT=8 run'
-Running hw2.out
-Enter the number of trials:
-1000
-We found 0 straight flushes out of 1000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=8 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=8 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-output.txt
-
-sent 450 bytes  received 146 bytes  238.40 bytes/sec
-total size is 189.02K  speedup is 317.14
-Executing remote command 'make MPI=true THREAD_COUNT=8 run'
-Running hw2.out
-Enter the number of trials:
-10000
-We found 0 straight flushes out of 10000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=8 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=8 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-
-sent 269 bytes  received 15 bytes  189.33 bytes/sec
-total size is 189.02K  speedup is 665.55
-Executing remote command 'make MPI=true THREAD_COUNT=8 run'
-Running hw2.out
-Enter the number of trials:
-100000
-We found 5 straight flushes out of 100000 hands or 0.005000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=8 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=8 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-
-sent 269 bytes  received 15 bytes  113.60 bytes/sec
-total size is 189.02K  speedup is 665.55
-Executing remote command 'make MPI=true THREAD_COUNT=8 run'
-Running hw2.out
-Enter the number of trials:
-1000000
-We found 13 straight flushes out of 1000000 hands or 0.001300 percent.
-Time elapsed: 0.04 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=8 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=8 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-
-sent 269 bytes  received 15 bytes  113.60 bytes/sec
-total size is 189.02K  speedup is 665.55
-Executing remote command 'make MPI=true THREAD_COUNT=8 run'
-10Running hw2.out
-Enter the number of trials:
-000000
-We found 147 straight flushes out of 10000000 hands or 0.001470 percent.
-Time elapsed: 0.38 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=8 run" run" 1 run"6 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=16 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-output.txt
-
-sent 454 bytes  received 182 bytes  254.40 bytes/sec
-total size is 193.11K  speedup is 303.64
-Executing remote command 'make MPI=true THREAD_COUNT=16 run'
-Running hw2.out
-Enter the number of trials:
-1000
-We found 0 straight flushes out of 1000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=16 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=16 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-
-sent 269 bytes  received 15 bytes  113.60 bytes/sec
-total size is 193.11K  speedup is 679.97
-Executing remote command 'make MPI=true THREAD_COUNT=16 run'
-Running hw2.out
-Enter the number of trials:
-10000
-We found 0 straight flushes out of 10000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=16 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=16 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-
-sent 269 bytes  received 15 bytes  113.60 bytes/sec
-total size is 193.11K  speedup is 679.97
-Executing remote command 'make MPI=true THREAD_COUNT=16 run'
-Running hw2.out
-Enter the number of trials:
-100000
-We found 0 straight flushes out of 100000 hands or 0.000000 percent.
-Time elapsed: 0.00 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=16 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=16 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
-
-sent 269 bytes  received 15 bytes  113.60 bytes/sec
-total size is 193.11K  speedup is 679.97
-Executing remote command 'make MPI=true THREAD_COUNT=16 run'
-Running hw2.out
-Enter the number of trials:
-1000000
 We found 16 straight flushes out of 1000000 hands or 0.001600 percent.
-Time elapsed: 0.02 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004h./runner.sh "make MPI=true THREAD_COUNT=16 run"[?1l>[?2004l
-]2;./runner.sh "make MPI=true THREAD_COUNT=16 run"]1;./runner.shUpdating remote filesystem
-sending incremental file list
+Time elapsed: 0.051641 seconds
 
-sent 269 bytes  received 15 bytes  189.33 bytes/sec
-total size is 193.11K  speedup is 679.97
-Executing remote command 'make MPI=true THREAD_COUNT=16 run'
+========== COMPLETE ==========
+
+Running 1000000 tests with 16 threads
+
 Running hw2.out
+srun: job 294105 queued and waiting for resources
+srun: job 294105 has been allocated resources
 Enter the number of trials:
-10000000
-We found 128 straight flushes out of 10000000 hands or 0.001280 percent.
-Time elapsed: 0.22 seconds
-[1m[7m%[27m[1m[0m                                                                                                                              ]2;mcmerdith@MattThinkpad:~/Projects/CISC372]1;..jects/CISC372]7;file://MattThinkpad/home/mcmerdith/Projects/CISC372\[0m[27m[24m[J[39m[0m[49m[40m[39m mcmerdith@MattThinkpad [44m[30m[30m ~/Projects/CISC372 [43m[34m[30m  main ± [49m[33m[39m [K[?1h=[?2004heexit[?1l>[?2004l
-]2;exit]1;exit
-Script done on 2023-10-05 20:24:55-04:00 [COMMAND_EXIT_CODE="0"]
+We found 17 straight flushes out of 1000000 hands or 0.001700 percent.
+Time elapsed: 0.024165 seconds
+
+========== COMPLETE ==========
+
+Running 10000000 tests with 1 threads
+
+Running hw2.out
+srun: job 294106 queued and waiting for resources
+srun: job 294106 has been allocated resources
+Enter the number of trials:
+We found 161 straight flushes out of 10000000 hands or 0.001610 percent.
+Time elapsed: 1.462729 seconds
+
+========== COMPLETE ==========
+
+Running 10000000 tests with 2 threads
+
+Running hw2.out
+srun: job 294107 queued and waiting for resources
+srun: job 294107 has been allocated resources
+Enter the number of trials:
+We found 138 straight flushes out of 10000000 hands or 0.001380 percent.
+Time elapsed: 1.343460 seconds
+
+========== COMPLETE ==========
+
+Running 10000000 tests with 4 threads
+
+Running hw2.out
+srun: job 294108 queued and waiting for resources
+srun: job 294108 has been allocated resources
+Enter the number of trials:
+We found 143 straight flushes out of 10000000 hands or 0.001430 percent.
+Time elapsed: 0.710356 seconds
+
+========== COMPLETE ==========
+
+Running 10000000 tests with 8 threads
+
+Running hw2.out
+srun: job 294109 queued and waiting for resources
+srun: job 294109 has been allocated resources
+Enter the number of trials:
+We found 148 straight flushes out of 10000000 hands or 0.001480 percent.
+Time elapsed: 0.421015 seconds
+
+========== COMPLETE ==========
+
+Running 10000000 tests with 16 threads
+
+Running hw2.out
+srun: job 294110 queued and waiting for resources
+srun: job 294110 has been allocated resources
+Enter the number of trials:
+We found 173 straight flushes out of 10000000 hands or 0.001730 percent.
+Time elapsed: 0.228704 seconds
+
+========== COMPLETE ==========
+
+merematt@cisc372:~/CISC372$ exit
+exit
+
+Script done on 2023-10-06 16:00:18-04:00 [COMMAND_EXIT_CODE="0"]

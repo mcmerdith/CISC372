@@ -207,7 +207,7 @@ int main(int argc, char **argv) {
     printf("We found %d straight flushes out of %d hands or %f "
            "percent.\n",
            total_flushes, total_count, percent);
-		printf("Time elapsed: %.2f seconds\n", end_time - start_time);
+		printf("Time elapsed: %.6f seconds\n", end_time - start_time);
   }
 
   MPI_Finalize();
