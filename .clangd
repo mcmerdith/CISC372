@@ -1,0 +1,2 @@
+CompileFlags:
+  Add: [-L/opt/openmpi/lib, -I/opt/openmpi/include]
