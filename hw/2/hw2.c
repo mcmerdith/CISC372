@@ -3,9 +3,16 @@
 #include <stdlib.h>
 #include <time.h>
 
-typedef enum { CLUBS = 0, SPADES = 1, HEARTS = 2, DIAMONDS = 3 } SUIT;
+typedef enum
+{
+  CLUBS = 0,
+  SPADES = 1,
+  HEARTS = 2,
+  DIAMONDS = 3
+} SUIT;
 
-typedef struct _card {
+typedef struct _card
+{
   int rank;
   SUIT suit;
 } Card;
@@ -18,7 +25,8 @@ char *labels[4] = {"clubs", "spades", "hearts", "diamonds"};
  * Arguments: card: A pointer to a card object to store the result
  * Returns: None
  */
-void randomCard(Card *card) {
+void randomCard(Card *card)
+{
   int value = rand();
   card->rank = value % 13 + 1;
   card->suit = (SUIT)rand() % 4;
@@ -29,8 +37,10 @@ void randomCard(Card *card) {
  * Arguments: cnt: an output variable to hold the selected number of trials
  * Returns: None
  */
-void getTotalTrials(int *cnt, int rank) {
-  if (rank == 0) {
+void getTotalTrials(int *cnt, int rank)
+{
+  if (rank == 0)
+  {
     printf("Enter the number of trials:\n");
     scanf("%d", cnt);
     // Broadcast to the other threads
@@ -46,8 +56,10 @@ void getTotalTrials(int *cnt, int rank) {
  * 				cardCount: The number of valid cards in the hand
  * so far Returns: non-zero if card is in the hand, zero otherwise
  */
-int inHand(Card *card, Hand hand, int cardCount) {
-  for (int i = 0; i < cardCount; i++) {
+int inHand(Card *card, Hand hand, int cardCount)
+{
+  for (int i = 0; i < cardCount; i++)
+  {
     if (card->rank == hand[i].rank && card->suit == hand[i].suit)
       return -1;
   }
@@ -59,7 +71,8 @@ int inHand(Card *card, Hand hand, int cardCount) {
  * Arguments: hand: The hand to check (array of cards)
  * Returns: non-zero if hand represents a straight flush, zero otherwise
  */
-int isStraightFlush(Hand hand) {
+int isStraightFlush(Hand hand)
+{
   int swap;
   // first check flush
   SUIT suit = hand[0].suit;
@@ -67,8 +80,10 @@ int isStraightFlush(Hand hand) {
     if (hand[i].suit != suit)
       return 0;
   for (int i = 0; i < 4; i++)
-    for (int j = 0; j < 4 - i; j++) {
-      if (hand[j].rank > hand[j + 1].rank) {
+    for (int j = 0; j < 4 - i; j++)
+    {
+      if (hand[j].rank > hand[j + 1].rank)
+      {
         swap = hand[j].rank;
         hand[j].rank = hand[j + 1].rank;
         hand[j + 1].rank = swap;
@@ -77,7 +92,8 @@ int isStraightFlush(Hand hand) {
   if (hand[4].rank == hand[3].rank + 1 && hand[3].rank == hand[2].rank + 1 &&
       hand[2].rank == hand[1].rank + 1 &&
       (hand[1].rank == hand[0].rank + 1 ||
-       (hand[0].rank == 1 && hand[4].rank == 13))) {
+       (hand[0].rank == 1 && hand[4].rank == 13)))
+  {
 #ifdef DEBUG
     printf("is a straight flush\n");
 #endif
@@ -92,7 +108,8 @@ int isStraightFlush(Hand hand) {
  * Arguments: hand: Array of card objects to print out
  * Returns: None
  */
-void printHand(Hand hand) {
+void printHand(Hand hand)
+{
   for (int i = 0; i < 5; i++)
     printf("\t(%d of %s)", hand[i].rank, labels[hand[i].suit]);
   printf("\n");
@@ -103,7 +120,8 @@ void printHand(Hand hand) {
  * pre-sorted Arguments: hand: An array of cards to store the result in Returns:
  * None
  */
-void makeStraightFlush1(Hand hand) {
+void makeStraightFlush1(Hand hand)
+{
   hand[0].rank = 1;
   hand[0].suit = SPADES;
   hand[1].rank = 2;
@@ -121,7 +139,8 @@ void makeStraightFlush1(Hand hand) {
  * unsorted Arguments: hand: An array of cards to store the result in Returns:
  * None
  */
-void makeStraightFlush2(Hand hand) {
+void makeStraightFlush2(Hand hand)
+{
   hand[0].rank = 4;
   hand[0].suit = SPADES;
   hand[1].rank = 8;
@@ -139,7 +158,8 @@ void makeStraightFlush2(Hand hand) {
  * unsorted Arguments: hand: An array of cards to store the result in Returns:
  * None
  */
-void makeStraightFlush3(Hand hand) {
+void makeStraightFlush3(Hand hand)
+{
   hand[0].rank = 11;
   hand[0].suit = SPADES;
   hand[1].rank = 13;
@@ -152,7 +172,8 @@ void makeStraightFlush3(Hand hand) {
   hand[4].suit = SPADES;
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
   int comm_size;
   int comm_rank;
 
@@ -174,12 +195,15 @@ int main(int argc, char **argv) {
 
   double start_time = MPI_Wtime();
 
-  for (int i = 0; i < local_count; i++) {
+  for (int i = 0; i < local_count; i++)
+  {
     int cardCount = 0;
-    while (cardCount < 5) {
+    while (cardCount < 5)
+    {
       Card card;
       randomCard(&card);
-      if (!inHand(&card, pokerHand, cardCount)) {
+      if (!inHand(&card, pokerHand, cardCount))
+      {
         pokerHand[cardCount].rank = card.rank;
         pokerHand[cardCount].suit = card.suit;
         cardCount++;
@@ -201,13 +225,14 @@ int main(int argc, char **argv) {
 
   double end_time = MPI_Wtime();
 
-  if (comm_rank == 0) {
+  if (comm_rank == 0)
+  {
     percent = (float)total_flushes / (float)total_count * 100.0;
 
     printf("We found %d straight flushes out of %d hands or %f "
            "percent.\n",
            total_flushes, total_count, percent);
-		printf("Time elapsed: %.6f seconds\n", end_time - start_time);
+    printf("Time elapsed: %.6f seconds\n", end_time - start_time);
   }
 
   MPI_Finalize();
